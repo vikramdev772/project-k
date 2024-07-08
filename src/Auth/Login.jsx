@@ -10,7 +10,7 @@ const Login = () => {
       <form className="flex flex-col gap-2.5 max-w-[500px] p-5 rounded-[20px] relative bg-[transparent] text-white border border-gray-800">
         <center>
           <p className="text-[28px] font-semibold tracking-tight relative flex items-center  text-blue-400 text-center">
-            <span className="text-blue-400">Welcome back to Data Care</span>
+            <span className="text-blue-400">Welcome back to MathProTech</span>
           </p>
         </center>
 

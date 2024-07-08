@@ -4,6 +4,9 @@ import Navbar from "./Navbar";
 import algebra from "../images/algebra.png";
 import geometry from "../images/pythagoras.png";
 import functions from "../images/book.png";
+import test from "../images/score.png";
+import { Link } from "react-router-dom";
+import { LiaBuyNLarge } from "react-icons/lia";
 const Course = () => {
   return (
     <>
@@ -14,15 +17,18 @@ const Course = () => {
           backgroundColor: "black",
         }}
       >
-        <h1 className="text-3xl text-blue-400 font-bold mt-8 md:mt-16">Courses</h1>
-        
+        <h1 className="text-3xl text-blue-400 font-bold mt-8 md:mt-16">
+          Courses
+        </h1>
+
         <div className="flex flex-col md:flex-row gap-8 md:gap-20 mt-8 md:mt-12">
           <Cards name="Level 1" img={algebra} />
           <Cards name="Level 2" img={geometry} />
-          <Cards name="Level 3" img={functions}/>
+          <Cards name="Level 3" img={functions} />
+          <Link to="/start">
+            <Cards name="Test" img={test} />
+          </Link>
         </div>
-        <br />
-        <br />
       </div>
     </>
   );
