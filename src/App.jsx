@@ -28,7 +28,7 @@ const App = () => {
           path="/quiz"
           element={<Quiz quizState={quizState} setQuizState={setQuizState} />}
         />
-         <Route path="/result" element={<Result quizState={quizState} />} />
+        <Route path="/result" element={<Result quizState={quizState} />} />
       </Routes>
     </BrowserRouter>
   );

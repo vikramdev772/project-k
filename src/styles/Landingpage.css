@@ -1,0 +1,60 @@
+.maths {
+    
+    animation-name:a;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes a {
+    0%   { left:0px; top:0px;}
+    25%  { left:200px; top:0px;}
+    /* 50%  { left:200px; top:200px;}
+    75%  { left:0px; top:200px;}
+    100% { left:0px; top:0px;} */
+  }
+
+.Logarithm{
+    
+    animation-name:lg;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes lg {
+    0%   { left:80px;width: 280px;margin-top: 100px; }
+    25%  { left:200px;width: 250px;margin-top: 200px; }
+   
+  }
+  
+  
+.venn{
+    
+    animation-name:vn;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes vn {
+    0%   { right:0px; top:0px; width: 180px;}
+    25%  { right:100px; top:0px; width: 190px;}
+    50% {right:150px; top:0px; width: 200px;}
+   
+  }
+
+  .sqroot {
+    
+    animation-name:sqr;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes sqr{
+    0%   { right:0px; bottom:0px; width: 180px;}
+    25%  { right:100px; bottom:0px; width: 270px;}
+    50% {right:150px; bottom:0px; width: 200px;}
+   
+  }
