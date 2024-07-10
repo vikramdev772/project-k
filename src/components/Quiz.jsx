@@ -19,7 +19,7 @@ const Quiz = ({ quizState, setQuizState }) => {
     }
   }, [timer]);
 
-  const radiosWrapper = useRef();
+ const radiosWrapper = useRef();
 
   useEffect(() => {
     setData(quizData?.data[activeQuestion]);

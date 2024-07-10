@@ -5,7 +5,7 @@ import algebra from "../images/algebra.png";
 import geometry from "../images/pythagoras.png";
 import functions from "../images/book.png";
 import test from "../images/score.png";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import clickSound from "../audio/mixkit-game-quick-warning-notification-268.wav";
 import Loading from "./Loading";
 
@@ -44,7 +44,7 @@ const Course = () => {
     <>
       <Navbar />
       <div
-        className="bg-cover bg-center min-h-screen flex flex-col items-center justify-center pt-16 md:pt-24"
+        className={`bg-cover bg-center min-h-screen flex flex-col items-center justify-center pt-16 md:pt-24 ${isLoading ? 'blur' : ''}`}
         style={{
           backgroundColor: "black",
         }}
@@ -74,6 +74,11 @@ const Course = () => {
         </div>
       )}
       <audio ref={audioRef} src={clickSound} />
+      <style jsx>{`
+        .blur {
+          filter: blur(5px);
+        }
+      `}</style>
     </>
   );
 };

@@ -14,7 +14,7 @@ const Navbar = () => {
     }
     setTimeout(() => {
       navigate(path);
-    }, 2000);
+    }, 1000);
   };
 
   return (
